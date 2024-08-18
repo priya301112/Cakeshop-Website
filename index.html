@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Sweet Shop!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#products" class="dropbtn">Products</a>
+                    <div class="dropdown-content">
+                        <a href="#cakes">Cakes</a>
+                        <a href="#cupcakes">Cupcakes</a>
+                        <a href="#cookies">Cookies</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to the Cake Shop, your one-stop destination for the most delectable and beautifully crafted cakes in town. Our cakes are made with the finest ingredients, ensuring each bite is a piece of heaven. Whether you’re celebrating a birthday, an anniversary, or any special occasion, we have the perfect cake to make your event unforgettable.</p>
+       
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At the Cake Shop, our journey began over a decade ago with a passion for baking and a dream to create the best cakes in town. Since our humble beginnings, we have grown into a beloved bakery known for our commitment to quality, creativity, and customer satisfaction.</p>
+       
+        <p>Beyond our cakes, we offer a variety of sweet treats including cupcakes, cookies, and pastries. Each item is crafted with the same attention to detail and dedication to quality that has made us a favorite among our customers.</p>
+        <p>Thank you for choosing the Cake Shop. We are honored to be a part of your special moments and look forward to continuing to bring sweetness and joy to your celebrations.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product" id="cakes">
+            <img src="pic1.jpg" alt="Cake 1">
+            <h3>Chocolate Cake</h3>
+            <p>Rich and moist chocolate cake.</p>
+        </div>
+        <div class="product" id="cupcakes">
+            <img src="pic2.jpg" alt="Cupcake 1">
+            <h3>Vanilla Cupcake</h3>
+            <p>Delicious vanilla cupcakes with frosting.</p>
+        </div>
+        <div class="product" id="cookies">
+            <img src="pic3.jpg" alt="Cookie 1">
+            <h3>Chocolate Chip Cookies</h3>
+            <p>Classic chocolate chip cookies.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cake Shop. All rights reserved.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Thanks for visiting our website!</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
